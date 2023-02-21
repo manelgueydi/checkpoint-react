@@ -1,18 +1,16 @@
-import "./App.css";
-import NavBaar from "./components/NavBaar/NavBaar";
-import Adresse from "./components/Adresse";
-import Image from "./components/Image";
-import Nom from "./components/Nom";
+import React from 'react';
+import ProfilePhoto from './components/profile/ProfilePhoto';
+import FullName from './components/profile/FullName';
+import Address from './components/profile/Address';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>lionel messi</h1>
-      <br />
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMb4Nc0fwEuoPGBEiqwxGnGxabDTttrujRjQ&usqp=CAU"
-        alt="messi"
-      />
+      <h1>My Profile</h1>
+      <ProfilePhoto />
+      <FullName />
+      <Address />
     </div>
   );
 }
